@@ -23,9 +23,21 @@ void dvoich()
 	std::cout << "Size of input file = " << fSize << std::endl;
 	
 	// creating of buffer
-	int *buf = new int[fSize];
+	char *buf = new char[fSize];
 	
+	// reading of file and printing
+	inf.read(buf, fSize);
+	int i;
+	for(i=0; i<fSize; i++)
+	{
+		std::cout<<buf[i];
+	}
 	
+	// writing all symbols to outputfile
+	outf.write(buf, fSize);
+	
+	// deleting of buffer
+	delete [] buf;
 	
 	// closing of files
 	inf.close();
