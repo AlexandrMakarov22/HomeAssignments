@@ -1,4 +1,4 @@
-# Assignment 2a
+# Assignment 2
 ## Author
 Александр Сергеевич Макаров, группа 24.Б82-мм
 ## Description
